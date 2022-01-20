@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#my_id {
+  color: green;
+}
+
+.my_class {
+  color: rgb(39, 57, 223);
+}
+
+#my_id2 {
+  color: rgb(201, 63, 53);
+}
+
+#my_id3 {
+  color: rgb(241, 229, 62);
+}
+
+#my_id4 {
+  color: rgb(52, 214, 193);
+}
+
+#my_id5 {
+  color: rgb(202, 122, 47);
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+/* asaas */
