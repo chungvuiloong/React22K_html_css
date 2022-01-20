@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  background-image: url("https://www.wilderness.org.au/images/uploads/2ACH01R-1-Alamy-sugar-glider-CROP.jpg");
+  background-size: cover;
+}
+
+h1 {
+  display: inline;
+}
+
+div {
+  background-color: tomato;
+  height: 150px;
+  text-size: 10px;
+  width: 150px;
+  border-radius: 50%;
+
+  /* This makes text in center */
+  text-align: center;
+  line-height: 100px;
+}
+
+.animal {
+  background-image: url("https://www.wilderness.org.au/images/uploads/2ACH01R-1-Alamy-sugar-glider-CROP.jpg");
+  background-size: cover;
+}
