@@ -12,6 +12,5 @@ Handles empty text box
 
  * @param {string} age
  */
-function getNextAge(age) {
-    
-}
+
+function getNextAge(age) {}
