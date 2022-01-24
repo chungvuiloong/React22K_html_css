@@ -12,16 +12,30 @@ Bonus: Make it handle a few collective nouns like "sheep" and "geese".
  */
 
 function pluralize(noun, number) {
+  // If value is 0
   if (number === 0) {
     return `no ${noun}s`;
-  } else if (number === 1) {
+  }
+
+  //If value is 1
+  else if (number === 1) {
     return `${number} ${noun}`;
-  } else if (number > 1) {
+  }
+
+  // If value is more than 2
+  else if (number > 1) {
+    //If value is special, GOOSE
     if (noun == "goose") {
       return `${number} geese`;
-    } else if (noun == "sheep") {
+    }
+
+    //If value is special, SHEEP
+    else if (noun == "sheep") {
       return `${number} sheep`;
-    } else {
+    }
+
+    //If value is regular, just add s
+    else {
       return `${number} ${noun}s`;
     }
   }
