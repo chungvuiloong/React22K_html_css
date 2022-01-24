@@ -13,4 +13,14 @@ Handles empty text box
  * @param {string} age
  */
 
-function getNextAge(age) {}
+function getNextAge(age) {
+  if (age) {
+    return age + 1;
+  } else if (" ") {
+    return 0;
+  } else {
+    return "Default";
+  }
+}
+
+console.log(getNextAge());
