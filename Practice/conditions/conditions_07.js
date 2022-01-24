@@ -11,7 +11,22 @@ Bonus: Make it handle a few collective nouns like "sheep" and "geese".
  * @param {string}
  */
 
-function pluralize(noun, number) {}
+function pluralize(noun, number) {
+  if (number === 0) {
+    return `no ${noun}s`;
+  } else if (number === 1) {
+    return `${number} ${noun}`;
+  } else if (number > 1) {
+    if (noun == "goose") {
+      return `${number} geese`;
+    } else if (noun == "sheep") {
+      return `${number} sheep`;
+    } else {
+      return `${number} ${noun}s`;
+    }
+  }
+}
+
 console.log("I have " + pluralize("cat", 0));
 console.log("I have " + pluralize("cat", 1));
-console.log("I have " + pluralize("cat", 2));
+console.log("I have " + pluralize("sheep", 2));
