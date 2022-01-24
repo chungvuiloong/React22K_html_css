@@ -10,7 +10,13 @@ Implements evenOrOdd() for odd numbers
 /**
  * @param {string} number
  */
-function evenOrOdd(number) {
 
-    
+function evenOrOdd(number) {
+  if (number % 2 == 0) {
+    return console.log("The number is even.");
+  } else {
+    return console.log("The number is odd.");
+  }
 }
+
+// console.log(evenOrOdd(3));
