@@ -1,10 +1,15 @@
+html {
+  height: 100%;
+  background-image: url("https://desenio.fi/bilder/artiklar/zoom/12264_2.jpg?imgwidth=435&qt=");
+}
+
 nav {
-  display: inline-block;
-  font-family: verdana;
 }
 
 header {
   background-color: brown;
+  border-right: 20px solid chocolate;
+  padding-right: 20px;
 }
 
 header ul li {
@@ -12,6 +17,67 @@ header ul li {
   text-decoration: none;
   color: white;
   margin-right: 10px;
+  border-right: 3px solid chocolate;
+  padding-right: 3px;
+  padding: 20px;
+  font-size: larger;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.square1 {
+  border: 3px dashed white;
+  height: 150px;
+  width: 150px;
+  background-color: purple;
+  display: inline-block;
+  margin: 25px;
+}
+
+.square2 {
+  border: 3px double white;
+  height: 150px;
+  width: 150px;
+  background-color: lightblue;
+  display: inline-block;
+  margin: 25px;
+}
+
+.square3 {
+  border: 10px dashed white;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(134, 248, 220);
+  display: inline-block;
+  margin: 25px;
+
+  border-top: 6px solid green;
+  border-left: 6px solid red;
+  border-bottom: 6px solid blue;
+  border-right: 6px solid yellow;
+}
+
+.square4 {
+  border: 10px dashed white;
+  height: 150px;
+  width: 150px;
+  background-color: lightgreen;
+  border-radius: 10%;
+  display: inline-block;
+  margin: 25px;
+}
+
+.circle {
+  border: 3px dashed black;
+  height: 150px;
+  width: 150px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 25px;
 }
 
 /* Contact */
