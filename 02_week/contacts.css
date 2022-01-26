@@ -1,0 +1,39 @@
+.top {
+  font-family: arial, sans-serif;
+  background-color: brown !important;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+td,
+th {
+  border: 3px solid #000000;
+  text-align: left;
+  padding: 8px;
+  border-collapse: collapse;
+}
+
+nav {
+  display: inline-block;
+  font-family: verdana;
+}
+
+tr:nth-child(even) {
+  background-color: chocolate;
+}
+tr:nth-child(odd) {
+  background-color: coral;
+}
+
+/* Header */
+header {
+  background-color: brown;
+}
+
+header ul li {
+  display: inline-block;
+
+  text-decoration: none;
+  color: white;
+}
