@@ -1,7 +1,8 @@
-/* Background color   - OK
-Img size              - OK
-Text colour           - OK
-Font family           - Some*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
 
 html {
   background-color: lightblue;
@@ -13,35 +14,52 @@ html {
   color: black;
   text-align: left;
   font-size: 100px;
-  border-right: 6px solid rgb(37, 19, 138);
+  border-right: 20px solid rgb(11, 42, 177);
   border-bottom: 6px solid rgb(37, 19, 138);
   background-color: rgb(56, 97, 230);
+  padding: 10px;
 }
 
 /* Navigation bar */
-nav {
-  display: block;
-  color: #000000;
-  font-family: "Courier New", Courier, monospace;
+
+ul {
+  list-style: none;
 }
 
-nav a {
-  /* Text */
-  color: #000000;
-  text-align: center;
-  font-size: 17px;
+li {
+  background: red;
+  display: inline-block;
+  border-right: 1px solid black;
+}
 
-  padding: 14px 16px;
-  text-decoration: none;
+/* nav {
+  padding: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+  padding: none;
+  padding-inline-start: none;
+  display: inline-block;
+}
+
+li {
+  color: #000000;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
 
   border-right: 1px solid #000000;
   background-color: rgb(111, 170, 247);
+
+  display: inline-block;
+  padding: 16px;
 }
 
-nav a:hover {
+nav li:hover {
   background-color: rgb(41, 72, 247);
-}
+} */
 
+/* body */
 #home,
 #aboutMe,
 #skill {
