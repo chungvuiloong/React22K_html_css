@@ -43,62 +43,42 @@ body {
   padding: 0;
 }
 
-#aboutMe,
-#skill {
-  color: tomato;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+/* home Container */
+.homeContainer {
+  background-color: green;
+  margin: 0px 40px;
+  padding: 25px;
+  position: absolute;
 }
+
+/* Left */
 
 .leftImage {
   height: 25%;
   width: 25%;
   background-repeat: no-repeat;
   background-size: 50px 50px;
-  float: left;
-  margin: 25px;
-}
-
-.rightImage {
-  height: 25%;
-  width: 25%;
-  background-repeat: no-repeat;
-  background-size: 50px 50px;
-  float: right;
-  margin: 25px;
+  display: inline-block;
+  /* float: left; */
+  overflow: hidden;
 }
 
 .leftTitle {
-  margin: 25px 0px;
   display: inline-block;
   font-size: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: left;
+  vertical-align: text-top;
 }
 
-.rightTitle {
-  margin: 25px 0px;
-  display: inline-block;
-  font-size: 40px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: right;
-}
-
-p.rightContent {
-  margin-right: 25px;
-  margin-left: 25px;
+p.leftContent {
+  margin: 0px 25px;
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: justify;
 }
 
-.aboutImage {
-  background-size: 50px 50px;
-}
-
-.skillImage {
-  height: 50%;
-  width: 50%;
-}
+/* Right */
 
 /* Contact CSS*/
 
