@@ -4,33 +4,41 @@
   box-sizing: 0;
 }
 
-html {
-  background-color: lightblue;
+.heroImage {
+  /* background-color: lightblue; */
+  background-image: url("https://media.istockphoto.com/photos/blue-ocean-view-panorama-picture-id186840575?k=20&m=186840575&s=612x612&w=0&h=zu5EiWJQEteyPbxp0jwYtF6g3q2sSzVgBP6zKr33zX4=");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 200px;
 }
 
 .portfolioHead {
   color: black;
-  text-align: left;
+  text-align: center;
   font-size: 100px;
-  border-right: 20px solid rgb(11, 42, 177);
-  border-bottom: 6px solid rgb(37, 19, 138);
-  background-color: rgb(56, 97, 230);
+  opacity: 0.7;
   padding: 10px;
 }
 
 /* Navigation bar */
+
+ul {
+  text-align: center;
+}
 
 li {
   color: #000000;
   font-size: 17px;
   font-family: "Courier New", Courier, monospace;
 
-  border-right: 1px solid #000000;
-  background-color: rgb(111, 170, 247);
-
   display: inline-block;
+
   padding: 16px;
-  margin-right: -4px;
+  margin: auto;
+  text-align: center !important;
 }
 
 nav li:hover {
@@ -45,23 +53,22 @@ body {
 
 /* home Container */
 .homeContainer {
-  background-color: green;
-  margin: 0px 20px;
-  padding: 25px;
+  background-color: #03658c;
+  padding: 50px;
   display: inline-block;
 }
 
 .meContainer {
-  background-color: pink;
-  margin: 0px 20px;
-  padding: 25px;
+  background-color: #2366be;
+  /* margin: 0px 20px; */
+  padding: 50px;
   display: inline-block;
 }
 
 .skillContainer {
-  background-color: green;
-  margin: 0px 20px;
-  padding: 25px;
+  background-color: #4a80c7;
+  /* margin: 0px 20px; */
+  padding: 50px;
   display: inline-block;
 }
 
@@ -76,12 +83,19 @@ body {
 }
 
 .leftTitle {
-  font-size: 40px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: left;
+  font-size: 50px;
+  background-color: #023e8a;
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  transform: rotate(17deg);
+  margin-left: 220px;
+  margin-top: ;
+  border: 1px solid black;
 }
 
 p.leftContent {
+  margin-top: 25px;
   font-size: 16px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: justify;
@@ -134,9 +148,8 @@ p.rightContent {
   height: 100px;
   text-align: center;
   transform: rotate(-20deg);
-
-  margin-top: 50px;
   margin-left: 150px;
+  border: 1px solid black;
 }
 
 .msg2 {
@@ -147,6 +160,7 @@ p.rightContent {
   text-align: center;
   transform: rotate(25deg);
   margin-left: 300px;
+  border: 1px solid black;
 }
 
 /* ====================================================================== */
@@ -159,10 +173,11 @@ p.rightContent {
   border-right: -60px;
   font-size: 20px;
   text-align: center;
+  background-color: rgb(72, 156, 252);
 }
 
 .contactDetailsBox {
-  background-color: rgb(72, 156, 252);
+  background-color: rgb(40, 131, 236);
   padding: 20px;
   margin-bottom: 50px;
   margin-top: 50px;
