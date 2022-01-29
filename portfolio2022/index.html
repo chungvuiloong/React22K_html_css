@@ -106,10 +106,9 @@
 
     <div class="contactDetailsContainer">
       <div class="contactDetails">
-        <p class="meow">Know more about MrJay. Press
-          <a href="https://sliceofjay.wordpress.com/">Here</a>
-          <p>Want to contact us? Press the icons below!!</p>
-        </p>
+        <p>Know more about MrJay. Press <a href="https://sliceofjay.wordpress.com/">Here</a></p>
+        <p>Want to contact us? Press the icons below!!</p>
+        
 
          <!-- Social media button  -->
         <div class="socialMediaB">
@@ -129,71 +128,59 @@
 
         <!--Contact form details-->
 
+        
+
+
+
+
         <form class="contactUsContainer">
 
          <div class="row">
+           
             <div class="col">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstName" placeholder="Your name..">
-
-              <label for="cname">Contact number</label>
-              <input type="text" id="cnumber" name="contactNumber" placeholder="Your contact number..">
-
-                 
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstName" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastName" placeholder="Your last name..">
+                <label for="cname">Contact number</label>
+                <input type="text" id="cnumber" name="contactNumber" placeholder="Your contact number..">
+                <label for="lname">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email..">       
             </div>
 
+            
             <div class="col">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastName" placeholder="Your last name..">
-              <label for="lname">Email</label>
-              <input type="text" id="email" name="email" placeholder="Email..">
-
-              
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Hey you :)" style="height:200px"></textarea>
+                <input type="submit" value="Submit" onclick= "meowUs();">
             </div>
-
-         </div>
-
-             <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Hey you :)" style="height:200px"></textarea>
-              <input type="submit" value="Submit">  
-
+         </div>         
           
-
         </form>
-
-
-
-
-
-        
-
-        <!-- <form class="contactUsContainer">
-
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstName" placeholder="Your name..">
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastName" placeholder="Your last name..">
-
-          <label for="fname">Contact number</label>
-          <input type="text" id="cnumber" name="contactNumber" placeholder="Your contact number..">
-
-          <label for="lname">Email</label>
-          <input type="text" id="email" name="email" placeholder="Email..">
-
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Hey you :)" style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-
-        </form> -->
-
-
-
   </section>
 
-
+    <audio id="meow" src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/cats-meow-2_MktkaWEu.mp3"></audio>
     <script type="text/javascript" src="javascript.js"></script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+
+              
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+                attribution="setup_tool"
+                page_id="1748676725208976"
+                logged_in_greeting="Hi there! How can we meow you today?"
+                logged_out_greeting="Hi there! How can we meow you today?">
+      </div>
   </body>
 
 
