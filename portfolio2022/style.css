@@ -34,9 +34,7 @@ li {
   color: #000000;
   font-size: 17px;
   font-family: "Courier New", Courier, monospace;
-
   display: inline-block;
-
   padding: 16px;
   margin: auto;
   text-align: center !important;
@@ -52,18 +50,30 @@ body {
   padding: 0;
 }
 
-/* home Container */
-.homeContainer {
+/* home  section */
+.homeContainer,
+.skillContainer {
+  display: flex;
   background-color: #03658c;
   max-width: 100%;
   padding: 50px;
+  border-top: 2px solid black;
 }
 
 .meContainer {
-  background-color: #2366be;
-  /* margin: 0px 20px; */
+  justify-content: right;
+  display: flex;
+  background-color: #03658c;
+  max-width: 100%;
   padding: 50px;
+  border-top: 2px solid black;
 }
+
+.textContainer {
+  align-items: stretch;
+}
+
+/* About me section */
 
 .skillContainer {
   background-color: #4a80c7;
@@ -73,28 +83,27 @@ body {
 
 /* Left */
 
-.leftImage {
-  /* width: 200px; */
-  background-repeat: no-repeat;
-  display: inline;
-  float: left;
+.imgContainerLeft {
+  height: 300px;
+  width: 300px;
+
+  overflow: hidden;
+  border: 2px solid black;
   margin-right: 25px;
 
-  object-fit: contain;
-  width: 200px;
-  min-height: 200px;
-  max-height: auto;
+  flex-basis: 300px; /* Keeps the contaier fixed size */
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .leftTitle {
   font-size: 50px;
   background-color: #023e8a;
-  width: 160px;
-  height: 60px;
   text-align: center;
   transform: rotate(17deg);
-  margin-left: 220px;
   border: 1px solid black;
+  padding: 0px 20px;
+  width: fit-content;
 }
 
 p.leftContent {
@@ -106,24 +115,23 @@ p.leftContent {
 }
 
 /* Right */
-.rightImage {
-  background-repeat: no-repeat;
-  background-size: 50px 50px;
-  display: inline;
-  float: right;
+
+.imgContainerRight {
+  height: 300px;
+  width: 300px;
+
+  overflow: hidden;
+  border: 2px solid black;
   margin-left: 25px;
 
-  object-fit: contain;
-  width: 200px;
-  min-height: 200px;
-  max-height: auto;
+  flex-basis: 300px; /* Keeps the contaier fixed size */
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .rightTitle {
   font-size: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  display: inline;
-  text-align: right;
 }
 
 p.rightContent {
@@ -135,13 +143,14 @@ p.rightContent {
 
 /* Contact CSS*/
 
-.containerImg {
+.cmImgContainer {
   height: 200px;
   max-width: 100%;
   background-color: rgb(104, 182, 255);
+  padding: 20px 0px 0px 0px;
 }
 
-.img {
+.cmImg {
   max-width: 100%;
   height: 100%;
   background-image: url("images/csBackImg.png");
