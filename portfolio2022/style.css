@@ -211,13 +211,13 @@ p.rightContent {
   text-align: center;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-flow: column wrap;
 }
 
-/* .contactContainerRowLeft,
-.contactContainerRowRight {
-
-} */
+.row1,
+.row2 {
+}
 
 /* The below footer */
 .footer {
