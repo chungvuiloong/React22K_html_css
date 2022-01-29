@@ -32,9 +32,9 @@
             <h1 class="portfolioHead">Jere Portfolio</h1>
             <nav>
                 <ul>
-                  <li><a href="#Portfolio">Home</a></li>
+                  <li><a href="#Portfolio">Portfolio</a></li>
                   <li><a href="#aboutMe">About Me</a></li>
-                  <li><a href="#skill">Skill</a></li>
+                  <li><a href="#skill">Skill</a></li>                                        
                   <li><a href="https://en.bc.fi">More About BCH</a></li>
                   <li><a href="#contactMe">Contact me</a></li>
                 </ul>
@@ -104,109 +104,53 @@
       </div>
     </div>
 
-    <div class="contactDetails Roboto">
-      <div class="contactDetailsBox catsPaw">
+    <div class="contactDetailsContainer">
+      <div class="contactDetails">
         <p class="meow">Know more about MrJay. Press
           <a href="https://sliceofjay.wordpress.com/">Here</a>
+          <p>Want to contact us? Press the icons below!!</p>
         </p>
 
-        <!-- Social media  -->
-        <div class="socialMediaContact">
-          <p class="contact">Want to meow us? Press your paw on the icons below!!</p>
-
-          <a href="" class="facebookLogo">
+         <!-- Social media button  -->
+        <div class="socialMediaB">
+              
+          <a href="#" class="facebookLogo">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" style="width:50px;height:50px;"></img></a>
 
-          <a href="" class="twitterLogo">
+          <a href="#" class="twitterLogo">
             <img src="https://pbs.twimg.com/profile_images/875087697177567232/Qfy0kRIP.jpg" style="width:50px;height:50px;"></img></a>
 
-          <a href="" class="linkedLogo">
+          <a href="https://fi.linkedin.com/in/jere-cvl-540079123" class="linkedLogo">
             <img src="https://cdn.modernghana.com/images/content/p73wnb0nmh_likedin.jpg" style="width:50px;height:50px;"></img></a>
         </div>
-        <p class="cantMeow">Can't contact us? Leaving contact details to us below!</p>
+
+        <p>Can't reach us? Leave your contact details to us below.</p>
+        <p>We will get back to you ASAP.</p>
 
         <!--Contact form details-->
-        <div class="contactUsForm">
+        <form class="contactUsContainer">
+            <label for="lName">First Name</label>
+            <input type="text" name="firstname" placeholder="Your first name.."/>              
 
-          <!--Firstname-->
-          <div>
-            <div class="fName">
-              <div class=""><label for="fName">First Name :</label></div>
-              <div class=""><input type="text" name="firstname" placeholder="Your first name.."></div>
-            </div>
-          </div>
+            <label for="lName">Last Name</label>
+            <input type="text" name="lastname" placeholder="Your last name..">
+         
+            <label for="detailsNeeded">Contact number :</label>
+            <input type="text" placeholder="Your contact number..">
 
-          <!--Lastname-->
-          <div>
-            <div class="lName">
-              <div class=""><label for="lName">Last Name :</label>
-              </div>
-              <div class=""><input type="text" name="lastname" placeholder="Your last name..">
-              </div>
-            </div>
-          </div>
+            <label for="detailsNeeded">Email :</label>
+            <input type="text" placeholder="Your email..">
 
-          <!--Contact information-->
-          <div>
-            <div class="detailsNeeded">
-              <div class="">
-                <label for="detailsNeeded">Contact Details :</label>
-              </div>
+            <label for="detailsNeeded">Message :</label>
+            <textarea rows="4" cols="25" name="comment" form="usrform">Hey you :)</textarea>
+                        
+        </form> <!-- END contactUsForm -->
 
-              <div class="">
-                <input type="text" placeholder="Your contact number..">
-              </div>
-            </div>
-          </div>
-
-          <!--Country Selection-->
-          <div>
-
-
-            <div>
-              <select name="country">
-                <option value="malaysia">Malaysia</option>
-                <option value="newZealand">New Zealand</option>
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-            </div>
-          </div>
-
-          <!--Comment Box-->
-
-
-          <div>
-            <div>
-              <div class="textCommentBox">
-                <textarea rows="4" cols="25" name="comment" form="usrform"> Meow here please! ...</textarea>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!--Submit button-->
-              <div class="submit catsPaw">
-                <!-- Meow Sound -->
-                <audio id="meow" src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/cats-meow-2_MktkaWEu.mp3">
-
-                </audio>
-                <button onclick="meowUs();">Meow us Now!</button>
-              </div>
- 
-        </div> <!-- END contactUsForm -->
-      </div> <!-- End of contactDetailsBox -->
-    </div> <!-- End of contactDetails -->
   </section>
-
 
 
     <script type="text/javascript" src="javascript.js"></script>
   </body>
-
-
 
 
   <!-- footer -->
