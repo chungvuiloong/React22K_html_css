@@ -3,6 +3,42 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
 body {
   background-color: yellow;
   color: darkgreen;
@@ -93,6 +129,8 @@ h1::after {
   height: 100px;
   width: 100px;
   position: sticky;
+  top: 50px;
+  align-items: normal;
 }
 
 /* #box3 {
@@ -101,3 +139,19 @@ h1::after {
   width: 100px;
   position: relative;
 } */
+
+#modal {
+  height: 50vh;
+  width: 50vw;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  top: 25vh;
+  left: 25vw;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
